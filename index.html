@@ -1,1 +1,79 @@
-hahaah
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul,li{
+				list-style: none;
+			}
+			ul{
+			}
+			li{
+				display: inline-block;
+				float: left;
+				top: 0;
+				margin: 0 10px;
+			}
+			.outer{
+				width: 100px;
+				height: 100px;
+				background-color: #CCCCCC;
+			}
+			.inner{
+				width: 50px;
+				height: 50px;
+				background-color: #F7F7F7;
+			}
+			.Aouter{
+				position: relative;
+			}
+			.Ainner{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.Bouter{
+				position: relative;
+			}
+			.Binner{
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+			.Couter{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.Cinner{
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 -->
+		<ul>
+			<li>
+				<div class="outer Aouter">
+					<div class="inner Ainner"></div>
+				</div>
+			</li>
+			<li>
+				<div class="outer Bouter">
+					<div class="inner Binner"></div>
+				</div>
+			</li>
+			<li>
+				<div class="outer Couter">
+					<div class="inner Cinner"></div>
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>
+
